@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  frpc:
+    image: fatedier/frpc:v0.61.2
+    hostname: frpc
+    container_name: frpc
+    volumes:
+      - "./config/frpc.ini:/frpc.ini"
+    network_mode: "host"
